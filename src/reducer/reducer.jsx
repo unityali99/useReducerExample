@@ -10,6 +10,7 @@ const reducer = (state, action) => {
 
     case "reset":
       return initFunc(action.payload);
+
     default:
       throw new Error();
   }

@@ -8,9 +8,16 @@ function App() {
   return (
     <div className="App">
       <div>{state.count}</div>
-      <button onClick={dispatch({ type: "increment" })}>+</button>
-      <button onClick={dispatch({ type: "decrement" })}>-</button>
-      <button onClick={dispatch({ type: "reset", payload: initValue })}>
+      <button type="button" onClick={() => dispatch({ type: "increment" })}>
+        +
+      </button>
+      <button type="button" onClick={() => dispatch({ type: "decrement" })}>
+        -
+      </button>
+      <button
+        type="button"
+        onClick={() => dispatch({ type: "reset", payload: initValue })}
+      >
         {"Reset"}
       </button>
     </div>
